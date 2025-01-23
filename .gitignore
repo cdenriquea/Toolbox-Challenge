@@ -1,0 +1,44 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node.js
+node_modules/
+dist/
+.env
+
+# Dependency directories
+client/node_modules/
+api/node_modules/
+
+# Build directories
+client/build/
+api/build/
+
+# Temporary files
+*.tmp
+*.swp
+*.DS_Store
+Thumbs.db
+
+# Editor-specific files
+.vscode/
+.idea/
+*.code-workspace
+
+# OS-generated files
+.DS_Store
+*.~lock.*
+*.bak
+*.swp
+*.swo
+
+# Docker files
+docker-compose.override.yml
+
+# Tests
+coverage/
+.nyc_output/
