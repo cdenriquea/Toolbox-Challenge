@@ -23,4 +23,4 @@ RUN npm install -g serve
 EXPOSE 3001
 
 # Comando para iniciar el servidor estático
-CMD ["serve", "-s", "build", "-l", "3000"]
+CMD ["serve", "-s", "build", "-l", "3001"]

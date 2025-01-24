@@ -1,39 +1,76 @@
-.App {
+/* General Styles */
+body {
+  background-color: #f4f7fc;
+  /* Fondo suave */
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0056b3;
+  /* Azul elegante */
+}
+
+/* Card Styles */
+.card {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+  background-color: #ffffff;
+  /* Fondo blanco para contraste */
+}
+
+/* Table Styles */
+.table {
+  margin-top: 20px;
+  background-color: #ffffff;
+  /* Fondo blanco */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+}
+
+.table th {
+  background-color: #007bff;
+  /* Azul Bootstrap */
+  color: #fff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.table td {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+/* Spinner Styles */
+.spinner-border {
+  color: #007bff;
+  /* Azul Bootstrap */
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Form Styles */
+.form-select {
+  border-radius: 10px;
+  border: 1px solid #007bff;
+  /* Borde azul */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Sombra leve */
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+/* Alerts */
+.alert {
+  border-radius: 10px;
+  font-size: 1rem;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+/* Hover Effects */
+.table tbody tr:hover {
+  background-color: #f1f5ff;
+  /* Fondo azul claro al pasar el mouse */
 }
