@@ -28,14 +28,14 @@ router.get("/list", async (req, res) => {
 // Endpoint para procesar los archivos
 router.get("/data", async (req, res) => {
   try {
-    const { fileName } = req.query; // Read the fileName query parameter
+    const { fileName } = req.query; // Leer usando query param
     const {
       data: { files },
     } = await axios.get(`${BASE_URL}/files`, {
       headers: { Authorization: API_KEY },
     });
 
-    // Filter the files to process if fileName is provided
+    // Filter los archivos si existe el parametro
     const filesToProcess = fileName ? [fileName] : files;
 
     const fileData = await Promise.all(
