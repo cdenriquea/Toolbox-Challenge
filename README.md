@@ -1,7 +1,5 @@
 # Toolbox Challenge
 
-Este proyecto es una aplicación **Full-Stack** desarrollada como parte de un desafío técnico. Incluye un backend en **Node.js** con **Express** y un frontend en **React** que se comunica con el backend. La aplicación está configurada para ejecutarse localmente o en contenedores Docker.
-
 ---
 
 ## **Estructura del Proyecto**
