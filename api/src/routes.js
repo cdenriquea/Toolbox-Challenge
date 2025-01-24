@@ -5,14 +5,27 @@ const router = express.Router();
 const API_KEY = "Bearer aSuperSecretKey";
 const BASE_URL = "https://echo-serv.tbxnet.com/v1/secret";
 
-// Default route for /files
+// Endpoint por default
 router.get("/", (req, res) => {
   res.json({
     message: "Files API is working. Use /files/data to fetch file data.",
   });
 });
 
-// Route for /files/data
+// Endpoint para obtener la lista de archivos
+router.get("/list", async (req, res) => {
+  try {
+    const response = await axios.get(`${BASE_URL}/files`, {
+      headers: { Authorization: API_KEY },
+    });
+    res.status(200).json(response.data.files); // Enviar lista de archivos
+  } catch (error) {
+    console.error("Error fetching files list:", error.message);
+    res.status(500).json({ error: "Failed to fetch files list" });
+  }
+});
+
+// Endpoint para procesar los archivos
 router.get("/data", async (req, res) => {
   try {
     const { fileName } = req.query; // Read the fileName query parameter
