@@ -20,7 +20,7 @@ RUN npm run build
 RUN npm install -g serve
 
 # Expone el puerto para servir el frontend
-EXPOSE 3000
+EXPOSE 3001
 
 # Comando para iniciar el servidor estático
 CMD ["serve", "-s", "build", "-l", "3000"]
